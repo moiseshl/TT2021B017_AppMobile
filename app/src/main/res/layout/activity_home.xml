@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@color/fondo">
+
+    <View
+        android:id="@+id/bannerView"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:background="@drawable/ic_banner"
+        android:padding="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_space"
+        android:text="@string/home_principal"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/signOutButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/signOutButton"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="#f0f0f0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/txtPrincipal"
+        app:layout_constraintTop_toBottomOf="@id/txtPrincipal"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/signOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_space"
+        android:layout_marginEnd="@dimen/common_space"
+        android:background="#00ffffff"
+        android:contentDescription="@string/home_signout"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_exit" />
+
+    <View
+        android:id="@+id/cardMain"
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/ic_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtHistorial"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text"
+        app:layout_constraintTop_toTopOf="@id/cardMain"
+        app:layout_constraintStart_toStartOf="@id/cardMain"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/common_space"
+        android:layout_marginStart="@dimen/common_space"
+        android:text="@string/home_historial"/>
+
+    <TextView
+        android:id="@+id/txtPrueba"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/text"
+        app:layout_constraintStart_toStartOf="@id/txtHistorial"
+        app:layout_constraintTop_toBottomOf="@id/txtHistorial"
+        android:layout_marginTop="@dimen/common_space"
+        android:text="@string/testText"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/text"
+        app:layout_constraintStart_toStartOf="@id/txtPrueba"
+        app:layout_constraintTop_toBottomOf="@id/txtPrueba"
+        android:layout_marginTop="@dimen/small_space"
+        android:text="@string/testText"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnHistorial"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/home_btnHistorial"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/cardMain"
+        app:layout_constraintBottom_toBottomOf="@id/cardMain"
+        android:layout_marginEnd="@dimen/common_space"
+        style="@style/Widget.Material3.Button.TextButton"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startButton"
+        android:layout_width="225dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_button"
+        android:text="@string/home_iniciar"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardMain"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        app:layout_constraintStart_toStartOf="@id/startButton"
+        app:layout_constraintTop_toBottomOf="@id/startButton"
+        app:layout_constraintEnd_toEndOf="@id/startButton"
+        android:layout_marginTop="@dimen/common_space"
+        android:text="@string/home_aviso"/>
+
+    <ImageButton
+        android:id="@+id/userButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_button"
+        android:contentDescription="@string/home_user"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:layout_marginEnd="@dimen/large_space"
+        android:layout_marginBottom="@dimen/large_space"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_person" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

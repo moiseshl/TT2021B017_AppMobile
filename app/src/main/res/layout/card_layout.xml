@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/common_space"
+    android:background="@drawable/ic_card"
+    android:layout_marginBottom="@dimen/common_space">
+
+    <TextView
+        android:id="@+id/txtFecha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/testText"
+        android:textColor="@color/text"
+        android:layout_marginStart="@dimen/common_space"
+        android:layout_marginTop="@dimen/common_space"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtFC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:text="@string/card_frecuencia"
+            android:layout_marginTop="@dimen/small_space"
+            app:layout_constraintTop_toBottomOf="@id/txtFecha"
+            app:layout_constraintStart_toStartOf="@id/txtFecha"/>
+
+        <TextView
+            android:id="@+id/txtFrecuencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_space"
+            tools:text="100 PPM"
+            android:background="@drawable/ic_badge_red"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/txtFC"
+            app:layout_constraintStart_toStartOf="@id/txtFC"
+            app:layout_constraintTop_toBottomOf="@id/txtFC" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRevisar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/card_revisar"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/card_view"
+        app:layout_constraintBottom_toBottomOf="@id/card_view"
+        android:layout_marginEnd="@dimen/common_space"
+        style="@style/Widget.Material3.Button.TextButton"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

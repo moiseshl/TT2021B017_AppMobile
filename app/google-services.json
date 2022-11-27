@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "796143505595",
+    "project_id": "fir-kotlin-673f4",
+    "storage_bucket": "fir-kotlin-673f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796143505595:android:81d3caf440d606b57a599e",
+        "android_client_info": {
+          "package_name": "com.escom.tt2021b017"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796143505595-9bcnki4tg334qrrivli3c97rbl5odf47.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAURoHGYuMsolrWaHMgP_oVvcxOOTAJo9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796143505595-9bcnki4tg334qrrivli3c97rbl5odf47.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
